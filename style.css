@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    display: flex;
+    /* width: 100vw;
+    height: 100vh; */
+}
+
+
+.left {
+    /* background-image: ; */
+    background-color: green;
+    width: 300px;
+    height: 100vh;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-container {
+    background-color: rgba(211, 211, 211, 0.3);
+    position: relative;
+    top: -200px;
+    display: flex; 
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+.right {
+    
+    background-color: rgb(235, 235, 235);
+}
+
+form {
+   background-color: white; 
+}
+.form-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container>.row {
+    display: flex;
+    gap: 100px;
+}
