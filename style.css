@@ -4,14 +4,17 @@ body {
     /* width: 100vw;
     height: 100vh; */
 }
-
+@font-face {
+    font-family: nameFont;
+    src: url(./fonts/Norse-Bold.otf);
+}
 
 .left {
     background-image: url("./images/sand.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    /* background-color: #cccccc; */
+    
     width: 400px;
     height: 100vh;
     flex-shrink: 0;
@@ -31,6 +34,7 @@ body {
 .left .name {
     font-size: 3rem;
     color: white;
+    font-family: nameFont;
 }
 
 
