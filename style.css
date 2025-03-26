@@ -7,9 +7,12 @@ body {
 
 
 .left {
-    /* background-image: ; */
-    background-color: green;
-    width: 300px;
+    background-image: url("./images/sand.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-color: #cccccc; */
+    width: 400px;
     height: 100vh;
     flex-shrink: 0;
     display: flex;
@@ -18,23 +21,39 @@ body {
 }
 
 .logo-container {
-    background-color: rgba(211, 211, 211, 0.3);
+    background-color: rgba(50, 50, 50, 0.75);
     position: relative;
     top: -200px;
     display: flex; 
     justify-content: center;
     gap: 10px;
 }
-
+.left .name {
+    font-size: 3rem;
+    color: white;
+}
 
 
 .right {
-    
     background-color: rgb(235, 235, 235);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+.section {
+    padding: 20px;
+}
+
+.section.two {
+    background-color: white;
+    box-shadow:
+}
 form {
-   background-color: white; 
+   /* background-color: white;  */
+}
+h3 {
+    margin-top: 0;
 }
 .form-input {
     display: flex;
