@@ -3,6 +3,8 @@ body {
     display: flex;
     /* width: 100vw;
     height: 100vh; */
+    font-family: Arial;
+    --lightbrown: rgb(120, 99, 70);
 }
 @font-face {
     font-family: nameFont;
@@ -40,6 +42,7 @@ body {
 
 .right {
     background-color: rgb(235, 235, 235);
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,12 +52,19 @@ body {
     padding: 20px;
 }
 
+.section.one > p {
+    width: 600px;
+}
+.section.one > *:last-child {
+    font-weight: Bold;
+}
 .section.two {
     background-color: white;
-    box-shadow:
+    box-shadow: 5px 5px 5px darkgray;
 }
 form {
    /* background-color: white;  */
+
 }
 h3 {
     margin-top: 0;
@@ -72,4 +82,32 @@ h3 {
 .form-container>.row {
     display: flex;
     gap: 100px;
+}
+input {
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+input:focus {
+    box-shadow: 2px 2px 2px lightgray;
+}
+#password:invalid, #confirm-password:invalid {
+    border-color: red;
+}
+#password:valid, #comfirm-password:valid {
+    border-color: green;
+}
+.row.name, .row.contact {
+    margin-bottom: 10px;
+}
+
+.section.three button {
+    background-color: var(--lightbrown);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
+.login {
+    text-decoration: none;
+    color: var(--lightbrown);
 }

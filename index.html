@@ -19,7 +19,7 @@
             <p>Join us now!</p>
         </div>
         <div class="section two">
-            <form action="#" method="post">
+            <form action="#" method="post" autocomplete="off">
                 <h3>Get started</h3>
                 <div class="form-container">
                     <div class="row name">
@@ -45,11 +45,11 @@
                     <div class="row password">
                         <div class="form-input">
                             <label for="password">Password</label>
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password" required>
                         </div>
                         <div class="form-input">
                             <label for="confirm-password">Password</label>
-                            <input type="password" name="confirm-password" id="confirm-password">
+                            <input type="password" name="confirm-password" id="confirm-password" required>
                         </div>
                     </div>
                 </div>
@@ -57,7 +57,7 @@
         </div>
         <div class="section three">
             <button type="submit">Create Account</button>
-            <p>Already have an account? <a href="#">Log In</a></p>
+            <p>Already have an account? <a class="login" href="#">Log In</a></p>
         </div>
     </div>
 </body>
